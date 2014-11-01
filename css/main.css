@@ -31,6 +31,10 @@ a {
 	color: #BC00FF;
 }
 
+img {
+	width: 1em;
+}
+
 nav {
 	/*position: fixed;*/
 	text-align: center;
