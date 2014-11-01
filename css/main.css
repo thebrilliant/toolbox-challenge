@@ -3,4 +3,58 @@
 */
 
 @import url(../font/Rapscallion/RAPSCALL.ttf);
+@import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light);
+@import url(http://fonts.googleapis.com/css?family=Calligraffitti);
 
+body {
+	font-family: 'Calligraffitti', Helvetica, Century, Arial;
+	background-color: #4DEBA8;
+}
+
+header {
+	position: relative;
+	margin: 2em;
+	text-align: center;
+}
+
+header h1 {
+	font-family: 'Shadows Into Light', Helvetica, Century, Arial;
+	font-size: 3em;
+}
+
+header h2 {
+	font-size: 1.5em;
+}
+
+a {
+	color: #BC00FF;
+}
+
+nav {
+	/*position: fixed;*/
+	text-align: center;
+}
+
+nav ul {
+	margin: 1em;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 2em;
+	padding: 10px;
+}
+
+#intro {
+	text-align: center;
+	margin: 1.5em;
+	padding: 1em;
+}
+
+#how-to {
+	text-align: center;
+}
+
+#game-board {
+	background-color: #772993;
+}
