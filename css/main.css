@@ -5,6 +5,7 @@
 @import url(../font/Rapscallion/RAPSCALL.ttf);
 @import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light);
 @import url(http://fonts.googleapis.com/css?family=Calligraffitti);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:500italic);
 
 body {
 	font-family: 'Calligraffitti', Helvetica, Century, Arial;
@@ -45,6 +46,12 @@ nav li {
 	padding: 10px;
 }
 
+footer {
+	font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+	text-align: center;
+	margin: 2em 1em 0 1em;
+}
+
 #intro {
 	text-align: center;
 	margin: 1.5em;
@@ -57,4 +64,5 @@ nav li {
 
 #game-board {
 	background-color: #772993;
+	margin: 2em 1em;
 }
