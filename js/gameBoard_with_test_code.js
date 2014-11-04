@@ -1,5 +1,6 @@
+//javascript code
+//with jQuery!! :D
 //javascript to make and control the game board
-//using jQuery and Lo-Dash
 
 "use strict";
 
@@ -22,6 +23,7 @@ var successes = 0;
 function playGame () {
 	$('#game-board').empty();
 	var startTime = _.now();
+	//console.log(startTime);
 	$('article li').data("stats", {start: startTime, matchSuccess: successes, matchFail: attempts, matchLeft: count});
 
 	var startButton = $('#play');
@@ -38,11 +40,26 @@ function playGame () {
 		newTile.place = i;
 		newTile.show = false;
 		$('#game-board').data(newTile);
+		//console.log(newTile);
 		game_Board.append(newTile);
 	};
-	
+
+/*	_.forEach(imgsDouble, function(element, index) {
+		//console.log(element);
+		//console.log(index);
+		//create and configure a new img element
+		var newTile = $(document.createElement('img'));
+
+		newTile.attr('src', element);
+		newTile.attr('alt', 'tile face up');
+
+		game_Board.append(newTile);
+	});
+*/	
 	var allBoardImgs = $('img');
 	allBoardImgs.click(function () {
+		//console.log($(this));
+		//var index = $(this).data("i");
 		var newImg = $(this);
 		newImg.show = true;
 		newImg.attr('src', imgsDouble[newImg.place]);
@@ -69,6 +86,8 @@ function playGame () {
 			game_Board.delay(1000).append(newImg);
 		};
 	});
+
+	//console.log(allBoardImgs);
 }
 
 var allImgs = ['img/tile1.jpg', 'img/tile2.jpg', 'img/tile3.jpg', 'img/tile4.jpg', 'img/tile5.jpg', 
@@ -93,6 +112,10 @@ console.log(imgsDouble);
 
 var allSections = $('section');
 
+/*function function_name () {
+	// body...
+}*/
+
 function onReady() {
 	//allSections.hide();
 }
@@ -105,11 +128,22 @@ allNavLinks.click(function  () {
 
 $(onReady);
 
-if (matchesLeft == false) {
-	alert("You won!");
-};
+if (matchesLeft == true) {};
+
+//code to set up a timer for the game
+/*function timerFunc () {
+	var startTime = _.now();
+	//console.log(startTime);
+
+	var startButton = $('#play');
+
+	var timer;
+	timer = startButton.click(onTimer, 1000);
+}*/
 
 function onTimer () {
+	//compare _.now() to start time to get elapsed time
+	//Math.floor() rounds down to the nearest integer
 	var elapsedSeconds = Math.floor((_.now() - startTime) / 1000);
 	console.log(elapsedSeconds);
 	$('#time').append(elapsedSeconds);
