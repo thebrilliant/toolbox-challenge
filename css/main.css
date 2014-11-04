@@ -32,7 +32,8 @@ a {
 }
 
 img {
-	width: 1em;
+	width: 20%;
+	margin: 5px;
 }
 
 nav {
@@ -50,10 +51,24 @@ nav li {
 	padding: 10px;
 }
 
+article ul {
+	margin: 1em;
+	border: 2px groove #FFB719;
+}
+
+article li {
+	display: inline-block;
+	padding: 1em;
+}
+
 footer {
 	font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
 	text-align: center;
 	margin: 2em 1em 0 1em;
+}
+
+button {
+	padding: 5px;
 }
 
 #intro {
@@ -66,7 +81,13 @@ footer {
 	text-align: center;
 }
 
+#stats {
+	/*display: none;*/
+	font-family: 'Shadows Into Light', Helvetica, Century, Arial;
+}
+
 #game-board {
 	background-color: #772993;
-	margin: 2em 1em;
+	/*margin: 2em 1em;*/
+	color: #09B26A;
 }
